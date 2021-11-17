@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: pycodestyle src test && mypy src test && PYTHONPATH=./src/ pytest-3 test
+          command: pycodestyle src test && mypy src test && PYTHONPATH=./src/ pytest test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
